@@ -1,0 +1,14 @@
+include:
+#include <s3eTypes.h>
+
+functions:
+void sound_pool__init(int maxStreams) 
+int sound_pool__load(const char* path, int priority) -1
+int sound_pool__play(int soundID, float leftVolume, float rightVolume, int priority, int loop, float rate) -1
+void sound_pool__pause(int streamID)
+void sound_pool__resume(int streamID)
+void sound_pool__set_looping(int streamID, int loop)
+void sound_pool__stop(int streamID)
+void sound_pool__unload(int soundID)
+void sound_pool__release()
+
